@@ -2,9 +2,8 @@
  * built by slashhuang
  */
 var path= require('path');
-var exec = require('child_process').exec;
 var webpack = require('webpack');
-console.log(process.env);
+var webpackDevServer = require('webpack-dev-server');
 //命令
 var command = JSON.parse(process.env.npm_config_argv)['remain'].pop();
 if(command.toString().length==1){
@@ -17,6 +16,7 @@ if(command>16 || command<1){
 var configFile = require(`./demo${command}/webpack.config.js`);
 configFile.context = path.resolve(process.cwd(),`./demo${command}/`);
 configFile.output.path = configFile.context;
-webpack(configFile).run(function(){
-    console.log('run done ');
+configFile.watch = true;
+var compiler = webpack(configFile,function(){
+    console.log(`run  compilation done ${Date.now()}\n`)
 });

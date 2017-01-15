@@ -42,24 +42,11 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	document.write('<h1>Hello World</h1>');
-	import hello from 'hello';
-	var tst = __webpack_require__(1);// ==> commonJS的加载规范
-	console.log(tst);
-
-/***/ },
-/* 1  webpack.config.js文件  字符串*/ 
 /***/ function(module, exports) {
 
-	module.exports = {
-	  entry:'./main.js',
-	  output: {
-	    filename: 'bundle.js'
-	  }
-	};
+	"use strict";
 
+	fsfdsaf;
 
 /***/ }
 /******/ ]);

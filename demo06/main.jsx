@@ -1,6 +1,6 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
-var style = require('./app.css');
+var ReactDOM = require('react-dom'); // 处理js文件
+var style = require('./app.css'); // 处理css 文件
 
 ReactDOM.render(
   <div>
