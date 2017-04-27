@@ -7,7 +7,7 @@ These demos are purposely written in a simple and clear style. You will find no 
 First, install [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) globally.
 
 ```bash
-$ npm i -g webpack webpack-dev-server
+$ npm i -g webpack@1.x webpack-dev-server@1.x
 ```
 you can simply run the following command to see demo result
 ```bash
